@@ -36,9 +36,13 @@ In this example, if you were to follow the strategy guide, you would get a total
 
 What would your total score be if everything goes exactly according to your strategy guide?
 '''
+import os
 
-#file = open('input_test.txt', 'r')
-file = open('day2_input.txt', 'r')
+pwd = os.getcwd()
+input_folder = pwd + '\input\\'
+
+#file = open(input_folder + 'input_test.txt', 'r')
+file = open(input_folder + 'day2_input.txt', 'r')
 #print(file.read())
 
 #win by sum of scores for each round (1 for R, 2 for P, 3 for S, 0 for loss, 3 for draw, 6 for win)

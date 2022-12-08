@@ -37,9 +37,13 @@ nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg: first marker after character 10
 zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw: first marker after character 11
 How many characters need to be processed before the first start-of-packet marker is detected?
 '''
+import os
 
-#with open('input_test.txt', 'r') as file:
-with open('day6_input.txt', 'r') as file:
+pwd = os.getcwd()
+input_folder = pwd + '\input\\'
+
+#with open(input_folder + 'input_test.txt', 'r') as file:
+with open(input_folder + 'day6_input.txt', 'r') as file:
     data = file.read()
 
 first_four = data[:4]

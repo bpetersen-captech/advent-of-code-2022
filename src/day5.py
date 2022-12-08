@@ -58,10 +58,15 @@ in stack 3, so you should combine these together and give the Elves the message 
 
 After the rearrangement procedure completes, what crate ends up on top of each stack?
 '''
-import re, copy
+import re
+import copy
+import os
 
-#with open('input_test.txt', 'r') as file:
-with open('day5_input.txt', 'r') as file:
+pwd = os.getcwd()
+input_folder = pwd + '\input\\'
+
+#with open(input_folder + 'input_test.txt', 'r') as file:
+with open(input_folder + 'day5_input.txt', 'r') as file:
     board_data, instructions = file.read().split('\n\n')
     board_data = board_data.split('\n')
     instructions = instructions.split('\n')

@@ -45,9 +45,13 @@ the Elf carrying the most Calories. In the example above, this is 24000 (carried
 
 Find the Elf carrying the most Calories. How many total Calories is that Elf carrying?
 '''
+import os
 
-#file = open('input_test.txt', 'r')
-file = open('day1_input.txt', 'r')
+pwd = os.getcwd()
+input_folder = pwd + '\input\\'
+
+#file = open(input_foldr + 'input_test.txt', 'r')
+file = open(input_folder + 'day1_input.txt', 'r')
 #print(file.read())
 
 sum = 0

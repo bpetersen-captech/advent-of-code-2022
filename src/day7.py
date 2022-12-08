@@ -82,8 +82,11 @@ Find all of the directories with a total size of at most 100000. What is the sum
 '''
 import os
 
-#with open('input_test.txt', 'r') as file:
-with open('day7_input.txt', 'r') as file:
+pwd = os.getcwd()
+input_folder = pwd + '\input\\'
+
+#with open(input_folder + 'input_test.txt', 'r') as file:
+with open(input_folder + 'day7_input.txt', 'r') as file:
     data = file.read().strip().split('\n')
 
 all_dir = {}

@@ -44,8 +44,13 @@ Find the item type that appears in both compartments of each rucksack. What is t
 #split string in half, find matching character
 #from matching chars, find sum of char values
 
-#with open('input_test.txt', 'r') as file:
-with open('day3_input.txt', 'r') as file:
+import os
+
+pwd = os.getcwd()
+input_folder = pwd + '\input\\'
+
+#with open(input_folder + 'input_test.txt', 'r') as file:
+with open(input_folder + 'day3_input.txt', 'r') as file:
     data = file.read().strip()
 
 sacks = data.split('\n')

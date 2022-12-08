@@ -46,9 +46,13 @@ will already be cleaning, so these seem like the most in need of reconsideration
 
 In how many assignment pairs does one range fully contain the other?
 '''
+import os
 
-#with open('input_test.txt', 'r') as file:
-with open('day4_input.txt', 'r') as file:
+pwd = os.getcwd()
+input_folder = pwd + '\input\\'
+
+#with open(input_folder + 'input_test.txt', 'r') as file:
+with open(input_folder + 'day4_input.txt', 'r') as file:
     data = file.read().strip()
 
 lines = data.split('\n')
